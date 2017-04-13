@@ -81,7 +81,7 @@ try
             unstash 'artifact'
             
             // Do not change the credentialsId.  This is the credential to deploy to predix-devops-runtime on CF1
-            withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'e74229f7-7ffd-4688-87c5-61c7440fa451', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD']]) {
+            withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'ILXMgWnCYNxwXgxDWuLVOANh', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD']]) {
                sh 'echo uname=$USERNAME pwd=$PASSWORD'
                sh 'cf login -a https://api.system.aws-usw02-pr.ice.predix.io -u $USERNAME -p $PASSWORD -o predix-devops-runtime -s dev'
             }
