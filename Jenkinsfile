@@ -48,6 +48,7 @@ try
             step([$class: 'JUnitResultArchiver', testResults: '**/target/surefire-reports/TEST-*.xml'])
         }
         
+      // 
       // stage('Static Code Analysis') {
       //      rtMaven.run pom: 'pom.xml', goals: 'checkstyle:checkstyle pmd:pmd findbugs:findbugs -B -e'
       //     step([$class: 'CheckStylePublisher', pattern: '**/target/checkstyle-result.xml'])
