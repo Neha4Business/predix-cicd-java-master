@@ -1,0 +1,7 @@
+---
+applications:
+- name: predix-cicd-java-sample-app
+  memory: 256M
+  instances: 1
+  buildpack: https://github.com/cloudfoundry/java-buildpack.git#v3.7
+  path: target/predix-cicd-java-1.jar
